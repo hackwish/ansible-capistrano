@@ -1,0 +1,15 @@
+---
+- name: Install Capistrano
+  gem: 
+      name=capistrano
+      version={{ capistrano_version }}
+      user_install=no 
+      state=present
+#  sudo: yes
+
+- name: Install Capistrano-Passenger
+  gem: 
+      name=capistrano-passenger
+      user_install=no 
+      state=present
+#  sudo: yes

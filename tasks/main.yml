@@ -1,0 +1,7 @@
+---
+# tasks file for ansible-capistrano
+- include: 01-dependencies.yml
+  tags: capistrano-dependencies
+
+- include: 02-install.yml
+  tags: capistrano-install
